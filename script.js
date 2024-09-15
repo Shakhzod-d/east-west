@@ -116,7 +116,6 @@ const faqQuestion = document.querySelector("#faq-left");
 const faqAnswers = document.querySelector("#faq-right");
 
 const changeFaqData = (id) => {
-  console.log(id);
   activeFAQData = id;
 
   faqQuestion.innerHTML = "";
@@ -146,7 +145,7 @@ const changeFaqData = (id) => {
     `;
 };
 
-changeFaqData(1);
+changeFaqData(0);
 
 const sliderData = [
   {
@@ -163,7 +162,7 @@ const sliderData = [
     title:
       "EastWest has been our go-to partner for heavy machinery rentals for years. 2",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse asperiores alias, nostrum explicabo temporibus incidunt accusantium at beatae praesentium quia, ea, rerum eaque similique nobis molestiae ducimus vitae voluptatem rem?",
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse asperiores alias, nostrum explicabo temporibus incidunt accusantium at beatae praesentium ",
     name: "John Doe",
     role: "President and CEO of EastWest",
   },
@@ -172,7 +171,7 @@ const sliderData = [
     title:
       "EastWest has been our go-to partner for heavy machinery rentals for years. 3",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse asperiores alias, nostrum explicabo temporibus incidunt accusantium at beatae praesentium quia, ea, rerum eaque similique nobis molestiae ducimus vitae voluptatem rem?",
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse asperiores alias, nostrum explicabo temporibus incidunt accusantium at beatae praesentium ",
     name: "Diyorbek Burkhanov",
     role: "Front End Developer",
   },
