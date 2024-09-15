@@ -159,6 +159,18 @@ button {
     visibility: hidden;
   }
 }
+@media (max-width: 570px) {
+  .header .navbar {
+    margin-bottom: 0px;
+    padding: 12px 0;
+  }
+  .header .navbar .logo {
+    max-width: 200px !important;
+  }
+  .header .navbar .logo img {
+    max-width: 200px !important;
+  }
+}
 .header .navbar .container {
   display: flex;
   align-items: center;
@@ -434,7 +446,11 @@ button {
 .services-section .cards .card::after {
   content: "";
   border-radius: 16px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5019607843) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5019607843) 100%
+  );
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -550,14 +566,27 @@ button {
   align-items: center;
   cursor: pointer;
 }
-.testimionals-section .container .slider .content > div div:nth-child(2) div:hover {
+.testimionals-section
+  .container
+  .slider
+  .content
+  > div
+  div:nth-child(2)
+  div:hover {
   background: #e2d9d9;
 }
 @media (max-width: 700px) {
   .testimionals-section .container .slider .content > div div:nth-child(2) div {
     padding: 5px;
   }
-  .testimionals-section .container .slider .content > div div:nth-child(2) div * {
+  .testimionals-section
+    .container
+    .slider
+    .content
+    > div
+    div:nth-child(2)
+    div
+    * {
     width: 15px;
     height: 15px;
   }
@@ -580,6 +609,11 @@ button {
 
 .faq-section {
   padding: 72px 0;
+}
+@media (max-width: 1110px) {
+  .faq-section {
+    display: none;
+  }
 }
 .faq-section .title {
   margin-bottom: 70px;
