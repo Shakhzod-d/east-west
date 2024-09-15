@@ -1,3 +1,21 @@
+const menuIcon = document.querySelector(".menu");
+const menuList = document.querySelector(".nav-list");
+
+menuIcon.addEventListener("click", () => {
+  menuIcon.classList.toggle("menu-active");
+  menuList.classList.toggle("nav-list_active");
+});
+
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    navbar.classList.add("fixed");
+  } else {
+    navbar.classList.remove("fixed");
+  }
+});
+
 const socialsData = [
   { link: "#", icon: "/images/icons/telegram.svg" },
   { link: "#", icon: "/images/icons/instagram.svg" },
@@ -124,28 +142,48 @@ const changeFaqData = (id) => {
   faqQuestionsData.map(
     (item) =>
       (faqQuestion.innerHTML += `  
-     <label class="${
-       activeFAQData == item.id ? "active" : ""
-     }" onclick="changeFaqData(${item.id})">
-       <input type="radio"/>
-       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="12" fill="#E5E5E5"/>
-       </svg>
-       <p>${item.text}</p>
-       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M8 4L16 12L8 20" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-       </svg>
-      </label>
+
+    <div class="${
+      activeFAQData == item.id ? "active" : ""
+    }" onclick="changeFaqData(${item.id})">
+      <label >
+          <input type="radio"/>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" fill="#E5E5E5"/>
+          </svg>
+          <p>${item.text}</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M8 4L16 12L8 20" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </label>
+
+        <div class="${
+          activeFAQData == item.id
+            ? "faq-que-ans faq-que-ans_active"
+            : "faq-que-ans"
+        }">
+          <h2>${faqsData[item.id].title}</h2>
+          <p>${faqsData[item.id].description}</p>
+        </div>
+    </div>
     `)
   );
 
+  changeFaqClass(id);
+
   faqAnswers.innerHTML += `
-    <h2>${faqsData[activeFAQData].title}</h2>
-    <p>${faqsData[activeFAQData].description}</p>
+    <h2>${faqsData[id].title}</h2>
+    <p>${faqsData[id].description}</p>
     `;
 };
 
 changeFaqData(0);
+
+function changeFaqClass(id) {
+  const faqs = document.querySelectorAll(".faq-que-ans");
+
+  faqs[id].classList.toggle(".faq-que-ans_active");
+}
 
 const sliderData = [
   {
@@ -180,8 +218,6 @@ const sliderData = [
 const slider = document.querySelector("#slider");
 
 const changeSlider = (id) => {
-  console.log(id);
-
   slider.innerHTML = "";
 
   slider.innerHTML = `
