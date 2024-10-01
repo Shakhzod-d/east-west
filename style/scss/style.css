@@ -1179,17 +1179,12 @@ button {
 }
 
 @media (max-width: 807px) {
-  .header .menu {
-    display: block;
-  }
-  .header .container ul {
-    display: none;
-  }
   .solutions-section {
-    margin-bottom: 100px;
+    margin-bottom: 0px;
   }
   .solutions-section .container h2 {
-    font-size: 24px !important;
+    font-size: 24px;
+    margin-bottom: 15px;
   }
   .solutions-section .container p {
     color: rgb(35, 0, 0);
@@ -1199,20 +1194,74 @@ button {
     display: flex;
     flex-direction: column;
   }
+  .solutions-section .container .cards .card {
+    margin: 0 auto;
+  }
   .solutions-section .container .cards .card h3 {
     font-size: 28px;
   }
   .solutions-section .container .cards .card p {
-    font-size: 16px;
+    font-size: 14px;
+    margin: 0;
   }
   .professionals-section .container h2 {
-    font-size: 28px;
+    font-size: 26px;
     margin-bottom: 10px;
   }
-  .professionals-section .container h2 {
+  .professionals-section .container p {
     font-size: 16px;
   }
   .professionals-section .container .cards {
     justify-content: center;
+  }
+}
+@media (max-width: 960px) {
+  .form-section {
+    margin-bottom: 40px;
+  }
+  .form-section .container h2 {
+    font-size: 28px;
+  }
+  .form-section .container form {
+    gap: 38px;
+  }
+  .form-section .container form div {
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+  .form-section .container form button {
+    max-width: 233px;
+    padding: 10px 32px;
+    font-size: 18px;
+  }
+  .contact-info-section .container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
+  .contact-info-section .container div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 216px;
+  }
+  .contact-info-section .container div h3 {
+    font-size: 18px;
+  }
+  .contact-info-section .container div p {
+    font-size: 16px;
+  }
+  .contact-info-section .container div:nth-child(1) {
+    max-width: 415px;
+  }
+  .contact-info-section .container div:nth-child(1) h2 {
+    font-size: 36px;
+  }
+  .contact-info-section .container div:nth-child(1) p {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
