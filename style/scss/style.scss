@@ -1080,7 +1080,6 @@ html {
         display: flex;
         justify-content: space-between;
         gap: 32px;
-
         input {
           flex: 1;
           position: relative;
@@ -1133,7 +1132,6 @@ html {
 
 .contact-info-section {
   background: #f7fafb;
-
   .container {
     display: flex;
     justify-content: space-between;
@@ -1145,7 +1143,6 @@ html {
       flex-direction: column;
       gap: 25px;
       max-width: 216px;
-
       h3 {
         color: var(--2nd, #000);
 
@@ -1156,7 +1153,6 @@ html {
         font-weight: 700;
         line-height: normal;
       }
-
       h3:nth-child(1) {
         &::after {
           margin-top: 25px;
@@ -1167,7 +1163,6 @@ html {
           background: #000;
         }
       }
-
       p {
         color: var(--2nd, #000);
 
@@ -1183,14 +1178,12 @@ html {
 
     div:nth-child(1) {
       max-width: 415px;
-
       h2 {
         color: var(--2nd, #000);
         font-family: Montserrat;
         font-size: 48px;
         font-weight: 700;
       }
-
       p {
         color: var(--2nd, #000);
         font-family: Inter;
@@ -1205,7 +1198,6 @@ html {
 
 .solutions-section {
   margin-bottom: 140px;
-
   .container {
     h2 {
       color: var(--2nd, #000);
@@ -1217,7 +1209,6 @@ html {
       margin-bottom: 36px;
       max-width: 1130px;
     }
-
     p {
       color: #666;
       font-family: Manrope;
@@ -1285,7 +1276,6 @@ html {
 
 .professionals-section {
   margin-bottom: 56px;
-
   .container {
     h2 {
       color: var(--2nd, #000);
@@ -1297,7 +1287,6 @@ html {
       max-width: 736px;
       margin-bottom: 36px;
     }
-
     p {
       color: #666;
       font-family: Manrope;
