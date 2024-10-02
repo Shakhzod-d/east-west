@@ -67,7 +67,7 @@ Array(15)
     (_, ind) =>
       (partners.innerHTML += `
     <a class="card" href="#">
-      <img src="/images/partners/${ind + 1}.svg" alt="partners"/>
+      <img src="/images/partners/${ind + 1}.png" alt="partners"/>
     </a>
     `)
   );
