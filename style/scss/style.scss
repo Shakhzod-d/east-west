@@ -889,9 +889,13 @@ html {
       justify-content: center;
       align-items: center;
       transition: 0.3s ease;
+      position: relative;
+
+      filter: grayscale(100%);
 
       &:hover {
         border: 1px solid var(--main, #f7c63b);
+        filter: grayscale(0);
       }
     }
   }
