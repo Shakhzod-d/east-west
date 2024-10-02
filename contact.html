@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EastWest | Contact us</title>
+    <link rel="stylesheet" href="/style/css/style.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header class="header second-header">
+      <nav class="navbar">
+        <div class="container">
+          <a href="/" class="logo">
+            <img src="./images/icons/logo.svg" alt="LOGO" />
+          </a>
+
+          <ul class="nav-list">
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="#">Why Eastwest</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li class="active"><a href="./contact.html">Contact us</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+
+          <div class="menu">
+            <img src="/images/icons/menu.png" alt="menu" />
+            <img src="/images/icons/cross.png" alt="menu" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header end -->
+
+    <!-- Form section start -->
+    <section class="form-section">
+      <div class="container">
+        <h2>Get in touch with us. We're here to assist you.</h2>
+
+        <form>
+          <div>
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Email Address" />
+            <input type="tel" placeholder="Phone Number (optional)" />
+          </div>
+
+          <label>
+            <textarea placeholder="Message"></textarea>
+          </label>
+
+          <button>Leave us feedback</button>
+        </form>
+      </div>
+    </section>
+    <!-- Form section end -->
+
+    <!-- Contact info section start -->
+    <section class="contact-info-section">
+      <div class="container">
+        <div>
+          <p>Contact Info</p>
+          <h2>We are always happy to assist you</h2>
+        </div>
+        <div>
+          <h3>Email Address</h3>
+          <h3>info@ewgroup.ae</h3>
+          <p>Assistance hours: Monday - Friday 8 am to 6 pm EST</p>
+        </div>
+        <div>
+          <h3>Number</h3>
+          <h3>+971 52 100 1880</h3>
+          <p>Assistance hours: Monday - Friday 8 am to 6 pm EST</p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact info section end -->
+
+    <!-- Footer start -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div>
+            <a href="#">
+              <img src="./images/icons/footer-logo.svg" alt="logo"
+            /></a>
+            <p>
+              <a href="tel:+971 52 100 1880">+971 52 100 1880</a>
+            </p>
+
+            <a href="mailto:info@ewgroup.ae">info@ewgroup.ae</a>
+          </div>
+          <div>
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Why choose us</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Subscribe</h2>
+            <label>
+              <input type="email" placeholder="Get updates" />
+
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0H44C47.3137 0 50 2.68629 50 6V44C50 47.3137 47.3137 50 44 50H0V0Z"
+                  fill="#FFB400"
+                />
+                <path
+                  d="M0 0H44C47.3137 0 50 2.68629 50 6V44C50 47.3137 47.3137 50 44 50H0V0Z"
+                  stroke="#D6D6D6"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M27.2335 32L32.8898 26.4285C33.4106 25.9152 33.4106 25.0832 32.8898 24.5715L27.2335 19L25.3479 20.8581L28.7279 24.1867H18V26.8129H28.7279L25.3479 30.1427L27.2335 32Z"
+                  fill="white"
+                />
+              </svg>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <div class="socials">
+            <a href="#">
+              <img src="./images/icons/in-light.svg" alt="jf" />
+            </a>
+            <a href="#">
+              <img src="./images/icons/facebook-light.svg" alt="jf" />
+            </a>
+            <a href="#">
+              <img src="./images/icons/twitter-light.svg" alt="jf" />
+            </a>
+          </div>
+
+          <div>
+            <p>A product of</p>
+            <img src="./images/icons/footer-logo.svg" alt="" />
+          </div>
+
+          <p>© <span id="date"></span>. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer end -->
+
+    <script>
+      const menuIcon = document.querySelector(".menu");
+      const menuList = document.querySelector(".nav-list");
+
+      menuIcon.addEventListener("click", () => {
+        menuIcon.classList.toggle("menu-active");
+        menuList.classList.toggle("nav-list_active");
+      });
+
+      const navbar = document.querySelector(".navbar");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          navbar.classList.add("fixed");
+        } else {
+          navbar.classList.remove("fixed");
+        }
+      });
+    </script>
+  </body>
+</html>
