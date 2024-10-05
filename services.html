@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EastWest | Services</title>
+    <link rel="icon" href="./images/icons/logo.svg" />
+    <link rel="stylesheet" href="/style/css/style.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+
+    <header class="header second-header">
+      <nav class="navbar">
+        <div class="container">
+          <a href="/" class="logo">
+            <img src="./images/icons/logo.svg" alt="LOGO" />
+          </a>
+
+          <ul class="nav-list">
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./why-us.html">Why Eastwest</a></li>
+            <li class="active"><a href="./services.html">Our Services</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+            <li><a href="./index.html#faqs">FAQ</a></li>
+          </ul>
+
+          <div class="menu">
+            <img src="/images/icons/menu.png" alt="menu" />
+            <img src="/images/icons/cross.png" alt="menu" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header end -->
+
+    <!-- Services Page section start -->
+    <section class="services-page-section">
+      <div class="container">
+        <h2>
+          Eastwest offers reliable heavy truck rentals in Dubai with flexible
+          solutions.
+        </h2>
+        <p>
+          With a modern fleet, experienced professionals, and a commitment to
+          excellence, we deliver reliable transportation solutions that ensure
+          your cargo is handled safely and efficiently.
+        </p>
+      </div>
+      <div class="cards"></div>
+    </section>
+    <!-- Services Page section end -->
+
+    <!-- Footer start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div>
+            <a href="#">
+              <img src="./images/icons/footer-logo.svg" alt="logo"
+            /></a>
+            <p>
+              <a href="tel:+971 52 100 1880">+971 52 100 1880</a>
+            </p>
+
+            <a href="mailto:info@ewgroup.ae">info@ewgroup.ae</a>
+          </div>
+          <div>
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Why choose us</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Subscribe</h2>
+            <label>
+              <input type="email" placeholder="Get updates" />
+
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0H44C47.3137 0 50 2.68629 50 6V44C50 47.3137 47.3137 50 44 50H0V0Z"
+                  fill="#FFB400"
+                />
+                <path
+                  d="M0 0H44C47.3137 0 50 2.68629 50 6V44C50 47.3137 47.3137 50 44 50H0V0Z"
+                  stroke="#D6D6D6"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M27.2335 32L32.8898 26.4285C33.4106 25.9152 33.4106 25.0832 32.8898 24.5715L27.2335 19L25.3479 20.8581L28.7279 24.1867H18V26.8129H28.7279L25.3479 30.1427L27.2335 32Z"
+                  fill="white"
+                />
+              </svg>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <div class="socials">
+            <a href="#">
+              <img src="./images/icons/in-light.svg" alt="jf" />
+            </a>
+            <a href="#">
+              <img src="./images/icons/facebook-light.svg" alt="jf" />
+            </a>
+            <a href="#">
+              <img src="./images/icons/twitter-light.svg" alt="jf" />
+            </a>
+          </div>
+
+          <div>
+            <p>A product of</p>
+            <img src="./images/icons/footer-logo.svg" alt="" />
+          </div>
+
+          <p>© <span id="date"></span>. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <script>
+
+      const menuIcon = document.querySelector(".menu");
+      const menuList = document.querySelector(".nav-list");
+
+      menuIcon.addEventListener("click", () => {
+        menuIcon.classList.toggle("menu-active");
+        menuList.classList.toggle("nav-list_active");
+      });
+
+      const navbar = document.querySelector(".navbar");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          navbar.classList.add("fixed");
+        } else {
+          navbar.classList.remove("fixed");
+        }
+      });
+
+      const data = [
+        {
+          id: 1,
+          title: "Machinery and equipment for the mining industry",
+          description:
+            "The mining industry in Dubai, while not as prominent as in other regions, still involves various machinery and equipment for activities such as quarrying, construction material extraction, and minerals trading. Dubai's role as a regional hub for mining technology and equipment distribution is significant, given its strategic position and business-friendly environment. Below is an overview of machinery and equipment commonly used in the mining industry in Dubai and the region",
+        },
+        {
+          id: 2,
+          title: "Construction equipment",
+          description:
+            "The mining industry in Dubai, while not as prominent as in other regions, still involves various machinery and equipment for activities such as quarrying, construction material extraction, and minerals trading. Dubai's role as a regional hub for mining technology and equipment distribution is significant, given its strategic position and business-friendly environment. Below is an overview of machinery and equipment commonly used in the mining industry in Dubai and the region",
+        },
+        {
+          id: 3,
+          title: "On-road and off-road dump trucks",
+          description:
+            "The mining industry in Dubai, while not as prominent as in other regions, still involves various machinery and equipment for activities such as quarrying, construction material extraction, and minerals trading. Dubai's role as a regional hub for mining technology and equipment distribution is significant, given its strategic position and business-friendly environment. Below is an overview of machinery and equipment commonly used in the mining industry in Dubai and the region",
+        },
+        {
+          id: 4,
+          title: "Agricultural machinery",
+          description:
+            "The mining industry in Dubai, while not as prominent as in other regions, still involves various machinery and equipment for activities such as quarrying, construction material extraction, and minerals trading. Dubai's role as a regional hub for mining technology and equipment distribution is significant, given its strategic position and business-friendly environment. Below is an overview of machinery and equipment commonly used in the mining industry in Dubai and the region",
+        },
+        {
+          id: 5,
+          title: "Energy systems and engines",
+          description:
+            "The mining industry in Dubai, while not as prominent as in other regions, still involves various machinery and equipment for activities such as quarrying, construction material extraction, and minerals trading. Dubai's role as a regional hub for mining technology and equipment distribution is significant, given its strategic position and business-friendly environment. Below is an overview of machinery and equipment commonly used in the mining industry in Dubai and the region",
+        },
+        {
+          id: 6,
+          title: "Lubricants",
+          description:
+            "The mining industry in Dubai, while not as prominent as in other regions, still involves various machinery and equipment for activities such as quarrying, construction material extraction, and minerals trading. Dubai's role as a regional hub for mining technology and equipment distribution is significant, given its strategic position and business-friendly environment. Below is an overview of machinery and equipment commonly used in the mining industry in Dubai and the region",
+        },
+        {
+          id: 7,
+          title: "Spare parts and maintenance",
+          description:
+            "The mining industry in Dubai, while not as prominent as in other regions, still involves various machinery and equipment for activities such as quarrying, construction material extraction, and minerals trading. Dubai's role as a regional hub for mining technology and equipment distribution is significant, given its strategic position and business-friendly environment. Below is an overview of machinery and equipment commonly used in the mining industry in Dubai and the region",
+        },
+        {
+          id: 8,
+          title: "Tires",
+          description:
+            "The mining industry in Dubai, while not as prominent as in other regions, still involves various machinery and equipment for activities such as quarrying, construction material extraction, and minerals trading. Dubai's role as a regional hub for mining technology and equipment distribution is significant, given its strategic position and business-friendly environment. Below is an overview of machinery and equipment commonly used in the mining industry in Dubai and the region",
+        },
+        {
+          id: 9,
+          title: "Road construction machines",
+          description:
+            "The mining industry in Dubai, while not as prominent as in other regions, still involves various machinery and equipment for activities such as quarrying, construction material extraction, and minerals trading. Dubai's role as a regional hub for mining technology and equipment distribution is significant, given its strategic position and business-friendly environment. Below is an overview of machinery and equipment commonly used in the mining industry in Dubai and the region",
+        },
+      ];
+
+      const cards = document.querySelector(".cards");
+
+      data.map((item) => {
+        return (cards.innerHTML += `
+           <div class="card">
+            <div>
+            <div>
+              <img src="/images/services-page/${item.id}.jpg" alt="services img" />
+            </div>
+            <div>
+             <h3>${item.title}</h3>
+             <p>${item.description}</p>
+            </div>
+            </div>
+          </div>
+`);
+      });
+    </script>
+  </body>
+</html>
