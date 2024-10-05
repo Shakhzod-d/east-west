@@ -140,7 +140,7 @@ html {
   transition: 0.5s;
   position: relative;
 }
-@media (max-width: 640px) {
+@media (max-width: 910px) {
   .header .navbar {
     position: fixed !important;
     top: 0px;
